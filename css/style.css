@@ -1,0 +1,126 @@
+.title{
+	text-align: center;
+	font-family: arial;
+	color: white;
+	background-color: #666;
+	font-size: 24pt;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	width:100%;
+	display: block;
+}
+	
+.subtitle{
+	text-align: center;
+	font-family: arial;
+	color: #999;
+	font-size: 18pt;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	display: block;
+	width: 100%;
+	border-bottom: #999 3px dotted;
+}
+		
+.text{
+	display: block;
+	font-family: arial;
+}
+
+.Passed{
+	float: right;
+	font-family: arial;
+	font-size: 18pt;
+	color: green;
+}
+	
+.Failed{
+	float: right;
+	font-family: arial;
+	font-size: 18pt;
+	color: red;
+}
+		
+.Exception{
+	float: right;
+	font-family: arial;
+	font-size: 18pt;
+	color: #FBB917;
+}
+		
+table{
+	border: 1px solid #666699;
+	border-spacing: 0px;
+	width: 100%;
+	font-family: arial;
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+table th{
+	border-bottom: 2px solid #669;
+	border-right: 1px solid #669;
+	background-color: #eee;
+	color: #669;
+	font-weight:bold;
+	padding: 5px;
+	cursor: pointer;
+}
+
+th span{
+	display: none;
+	float: right;
+}
+
+.highlightedColumn{
+	background-color: #eef;
+}
+
+td{
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee;
+	text-align: left;
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+td:last-child{
+	border-right:none;
+}
+
+.tdPassed{
+	font-family: arial;
+	color: green;
+	text-align: center;
+}
+
+.tdFailed{
+	font-family: arial;
+	color: red;
+	text-align: center;
+}
+
+.tdException{
+	font-family: arial;
+	color: #FBB917;
+	text-align: center;
+}
+
+.tdInfo{
+	font-family: arial;
+	color: blue;
+	text-align: center;
+}
+
+.break{
+	width: 100%;
+	background-color: #669;
+	height: 1px;
+}
+
+.seprate{
+	width: 100%;
+	background-color: #366;
+	height: 3px;
+}			

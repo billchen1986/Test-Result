@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test Result with Sortable Table</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="javascripts/sortTable.js"></script>
+<body>
+	<div>
+	<span class="title">Testing Report</span>
+	<span class="subtitle"><b>Test Summary</b></span>
+	</div>
+	<br/>
+	<div>
+	<span class="text"><b>Test: </b>Application Name</span>
+	<span class="text"><b>Product name: </b>Tool Name</span>
+	<span class="text"><b>Host Name: </b>AAA</span>
+	<span class="text"><b>Run started: </b>10/16/2015 07:04:53</span>
+	<span class="text"><b>Run ended: </b>10/16/2015 10:52:06</span>
+	<span class="text"><b>Total Execution Time:</b>03:47:13.9572546</span>
+	<span class="text"><b>PassTotal: </b>0</span>
+	<span class="text"><b>FailTotal: </b>0</span>
+	<span class="text"><b>InfoTotal: </b>0 </span>
+	<span class="text"><b>ExceptionTotal: </b>0</span>
+	</div>
+	<br/>
+	<table>
+	<colgroup>
+	<col id="col1" width="20%" />
+	<col id="col2" width="30%" />
+	<col id="col3" width="10%" />
+	<col id="col4" width="15%" />
+	<col id="col5" width="25%" />
+	</colgroup>
+	<thead>
+	<tr>
+	<th id="Name" onclick="sortTable('Name')"><span>&or;</span>Test Case Name</th>
+	<th id="Para" onclick="sortTable('Para')"><span>&or;</span>Parameter</th>
+	<th id="Result" onclick="sortTable('Result')"><span>&or;</span>Test Result</th>
+	<th id="Info" onclick="sortTable('Info')"><span>&or;</span>Result InFo</th>
+	<th id="Detail" onclick="sortTable('Detail')"><span>&or;</span>Error Detail</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td><a href=#Case1>Case1</a></td>
+	<td>A | B | C</td>
+	<td class="tdPassed">Passed</td>
+	<td/>
+	<td/>
+	</tr>
+	<tr>
+	<td><a href=#Case2>Case2</a></td>
+	<td>B | C | A</td>
+	<td class="tdFailed">Failed</td>
+	<td/>
+	<td>Error occurred!</td>
+	</tr>
+	<tr>
+	<td><a href=#Case3>Case3</a></td>
+	<td>A | C | B </td>
+	<td class="tdPassed">Passed</td>
+	<td/>
+	<td/>
+	</tr>
+	<tr>
+	<td><a href=#Case4>Case4</a></td>
+	<td>B | A | C</td>
+	<td class="tdPassed">Passed</td>
+	<td/>
+	<td/>
+	</tr>
+	<tr>
+	<td><a href=#Case5>Case5</a></td>
+	<td>C | A | B </td>
+	<td class="tdException">Exception</td>
+	<td/>
+	<td>Object Not Found!</td>
+	</tr>
+	<tr>
+	<td><a href=#Case6>Case6</a></td>
+	<td>C | B | A</td>
+	<td class="tdPassed">Passed</td>
+	<td/>
+	<td/>
+	</tr>
+	</tbody>
+	</table>
+	<br/>
+	<br/>
+	<div class="subtitle">Result Detail</div>
+	<br/>
+	<div>
+		<span class="text"><b>Test CaseName: </b><a name=Case1>Case1</a></span>
+		<span class="Passed"><b>Passed</b></span>
+		<span class="text"><b>Case RunTime: </b>10/16/2015 07:04:53</span>
+		<span class="text"><b>Test Parameters: </b>A | B | C</span>
+		<hr class="break"/>
+		<img src=./ScreenShot/Case1.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+	<div>
+		<span class="text"><b>Test CaseName: </b><a name=Case2>Case2</a></span>
+		<span class="Failed"><b>Failed</b></span>
+		<span class="text"><b>Case RunTime: </b>10/16/2015 07:06:26</span>
+		<span class="text"><b>Test Parameters: </b>B | C | A</span>
+		<span class="text"><b>Test Exception: </b>Error occurred!</span>
+		<hr class="break"/>
+		<img src=./ScreenShot/Case2.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+	<div>
+	<span class="text"><b>Test CaseName: </b><a name=Case3>Case3</a></span>
+	<span class="Passed"><b>Passed</b></span>
+	<span class="text"><b>Case RunTime: </b>10/16/2015 07:09:19</span>
+	<span class="text"><b>Test Parameters: </b>A | C | B</span>
+	<hr class="break"/>
+	<img src=./ScreenShot/Case3.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+	<div>
+	<span class="text"><b>Test CaseName: </b><a name=Case4>Case4</a></span>
+	<span class="Passed"><b>Passed</b></span>
+	<span class="text"><b>Case RunTime: </b>10/16/2015 07:18:31</span>
+	<span class="text"><b>Test Parameters: </b>B | A | C</span>
+	<hr class="break"/>
+	<img src=./ScreenShot/Case4.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+	<div>
+	<span class="text"><b>Test CaseName: </b><a name=Case5>Case5</a></span>
+	<span class="Exception"><b>Exception</b></span>
+	<span class="text"><b>Case RunTime: </b>10/16/2015 07:32:53</span>
+	<span class="text"><b>Test Parameters: </b>C | A | B</span>
+	<span class="text"><b>Test Exception: </b>Object Not Found!</span>
+	<hr class="break"/>
+	<img src=./ScreenShot/Case5.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+	<div>
+	<span class="text"><b>Test CaseName: </b><a name=Case6>Case6</a></span>
+	<span class="Passed"><b>Passed</b></span>
+	<span class="text"><b>Case RunTime: </b>10/16/2015 07:36:39</span>
+	<span class="text"><b>Test Parameters: </b>C | B | A</span>
+	<hr class="break"/>
+	<img src=./ScreenShot/Case6.png width = 900 height = 400 />
+	</div>
+	<hr class="seprate"/>
+</body>
+</html>
